@@ -10,7 +10,7 @@ const resultsFile = './results.txt';
 **/
 function montyHall(numTrials) {
     let resultsData = {
-        'door1': 0,
+        'originalDoor': 0,
         'otherDoor': 0
     };
 
@@ -38,7 +38,7 @@ function montyHall(numTrials) {
         }
 
         //if the car is behind the contestant's original choice, increment that result
-        if (carDoor == contestantDoor) resultsData['door1']++;
+        if (carDoor == contestantDoor) resultsData['originalDoor']++;
         //otherwise, if the car is behind the other door that the host didn't open, increment that result 
         else {
             for (let door = 1; door <= 3; door++) {
@@ -52,7 +52,7 @@ function montyHall(numTrials) {
     }
 
     //turn the number of wins for either choice into a decimal percentage
-    resultsData['door1'] /= numTrials;
+    resultsData['originalDoor'] /= numTrials;
     resultsData['otherDoor'] /= numTrials;
 
     return resultsData;
@@ -63,7 +63,7 @@ let results = '5 iterations of Monty Hall problem run 10,000 times: ' + '\n\n';
 for (let i = 0; i < 5; i++) {
     const resultsData = montyHall(10000);
 
-    results += 'sticking with original door: ' + (resultsData['door1'] * 100).toFixed(2) + '%' + '\n' +
+    results += 'sticking with original door: ' + (resultsData['originalDoor'] * 100).toFixed(2) + '%' + '\n' +
                'switching to other door: ' + (resultsData['otherDoor'] * 100).toFixed(2) + '%' + '\n\n';
 }
 

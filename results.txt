@@ -1,17 +1,17 @@
 5 iterations of Monty Hall problem run 10,000 times: 
 
-sticking with door no. 1: 33.11%
-switching to other door: 66.89%
+sticking with original door: 33.29%
+switching to other door: 66.71%
 
-sticking with door no. 1: 33.56%
-switching to other door: 66.44%
+sticking with original door: 33.19%
+switching to other door: 66.81%
 
-sticking with door no. 1: 32.57%
-switching to other door: 67.43%
+sticking with original door: 33.95%
+switching to other door: 66.05%
 
-sticking with door no. 1: 32.90%
-switching to other door: 67.10%
+sticking with original door: 34.12%
+switching to other door: 65.88%
 
-sticking with door no. 1: 33.36%
-switching to other door: 66.64%
+sticking with original door: 32.41%
+switching to other door: 67.59%
 

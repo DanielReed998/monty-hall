@@ -63,7 +63,7 @@ let results = '5 iterations of Monty Hall problem run 10,000 times: ' + '\n\n';
 for (let i = 0; i < 5; i++) {
     const resultsData = montyHall(10000);
 
-    results += 'sticking with door no. 1: ' + (resultsData['door1'] * 100).toFixed(2) + '%' + '\n' +
+    results += 'sticking with original door: ' + (resultsData['door1'] * 100).toFixed(2) + '%' + '\n' +
                'switching to other door: ' + (resultsData['otherDoor'] * 100).toFixed(2) + '%' + '\n\n';
 }
 
